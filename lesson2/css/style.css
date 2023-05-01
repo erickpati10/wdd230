@@ -11,10 +11,10 @@ body {
     
 }
 
-@media screen and (max-width: 1000px) and (min-width: 726px) {
+@media screen and (max-width: 40em) {
 main {
     
-    grid-template-columns: 1fr ;
+    grid-template-columns: 1fr;
     
   }
 }
@@ -27,16 +27,15 @@ div p {
 }
 main {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     margin: auto;
-    padding: 1rem;
     gap: 2rem;
+    padding: 1rem;
     text-align: center;
 
 
+
 }
-
-
 
 header{
   background-color: rgb(40, 7, 230);
@@ -49,11 +48,11 @@ header{
 }
 
 main div {
-    display: grid;
-    text-align: center;
+    /* width: 35%; */
+    /* text-align: center; */
     background-color: rgb(232, 240, 241);
     border-radius: 25px;
-    margin: auto;
+    
 
 }
 
@@ -69,22 +68,24 @@ color: aliceblue;
 
    
 .image,img {
- margin: auto;
+ margin: 0 auto;
  border-radius: 25px;
  padding: 1rem;
- height: 521px;
+ height: auto;
 
 
    
    
 }
 
-h2 {
-    background-color: rgb(161, 34, 49);
-    color: white;
+h2, a {
+    background-color: rgb(11, 11, 11);
+    color: rgb(10, 7, 235);
     border-radius: 25px;
     padding: 1rem;
-    font-size: 40px;
+    font-size: 22px;
+    text-align: center;
+    margin: .5rem;
     
 
 }
