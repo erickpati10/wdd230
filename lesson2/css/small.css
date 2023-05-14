@@ -12,7 +12,7 @@ body {
 
 main {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   margin: auto;
   gap: 2rem;
   padding: 1rem;
@@ -44,10 +44,12 @@ h1 {
 
 .image,
 img {
+  width: 100%;
   margin: 0 auto;
   border-radius: 25px;
   padding: 1rem;
-  height: auto;
+  height: 840px;
+  object-fit: cover;
 }
 
 h2,
@@ -73,21 +75,4 @@ footer {
   text-align: center;
   box-shadow: 0 10px 10px rgb(69, 200, 223);
   border-radius: 25px;
-}
-@media screen and (max-width: 40em) {
-  main {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media screen and (max-width: 100em) {
-  main {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media screen and (max-width: 1020px) {
-  div p {
-    font-size: 15px;
-  }
 }
