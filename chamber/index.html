@@ -7,7 +7,7 @@
     <title>Wild River Chamber of Commerce</title>
     <link rel="stylesheet" href="style/small.css" />
     <link rel="stylesheet" href="style/medium.css" />
-    <link rel="stylesheet" href="style/large.css" />
+    <link rel="stylesheet" href="style/base.css" />
     <meta
       name="description"
       content="This page will be help to built a better networking in the community"
@@ -23,15 +23,6 @@
         <div class="name">
           <h1>The Wild River Chamber</h1>
         </div>
-
-        <nav>
-          <ul>
-            <li>Home</li>
-            <li>Contact</li>
-            <li>News & Events</li>
-            <li>About Us</li>
-          </ul>
-        </nav>
         <div class="social">
           <a href="https://facebook.com">
             <?xml version="1.0" ?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.0//EN' 'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
@@ -110,6 +101,17 @@
           </a>
         </div>
       </div>
+
+      <nav>
+        <button id="button">&#9776;</button>
+        <ul id="navigation">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">News & Events</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </nav>
+
       <div id="date"></div>
     </header>
     <main>
@@ -126,10 +128,23 @@
     </main>
 
     <footer>
+      <section class="info_box">
+        <div class="logo">
+          <img src="images/logo.png" alt="" />
+        </div>
+        <div class="contact">
+          <h2>Wild River Chamber</h2>
+          <address>Lehi, Utah 84043</address>
+          <a
+            href="https://www.google.com/maps/place/Lehi,+UT/@40.413362,-111.8687955,12z/data=!3m1!4b1!4m6!3m5!1s0x874d7fedd81a1b69:0xfd6fac81600d61c9!8m2!3d40.3916172!4d-111.8507662!16zL20vMDEwZ3N6"
+            >MAP</a
+          >
+        </div>
+      </section>
       <div class="footer-container">
-        <p>&copy <span id="year"></span> .:|:. Erick Patino .:|:. Utah</p>
         <p>
-          Last Updated:
+          &copy;<span id="year"></span> | Wild River Chamber | .:|:. Erick
+          Patino .:|:. | WDD 230 Project | Last Updated:
           <span id="date-time"></span>
         </p>
       </div>

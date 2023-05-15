@@ -22,3 +22,10 @@ let fulldate_format =
 document.getElementById("date-time").textContent = current_date_time;
 document.getElementById("year").textContent = year;
 document.getElementById("date").textContent = fulldate_format;
+
+function toggleMenu() {
+  document.getElementById("navigation").classList.toggle("open");
+}
+
+const x = document.getElementById("button");
+x.onclick = toggleMenu;
