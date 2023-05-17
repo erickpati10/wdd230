@@ -12,7 +12,7 @@ body {
 
 main {
   display: grid;
-  grid-template-columns: 1fr;
+  /* grid-template-columns: 1fr; */
   margin: auto;
   gap: 2rem;
   padding: 1rem;
@@ -24,11 +24,10 @@ header {
   width: 100%;
   margin: auto;
   border-radius: 25px;
-  box-shadow: 0 10px 10px rgb(69, 200, 223);
+  box-shadow: 0 10px 10px rgb(203, 213, 214);
 }
 
 main section {
-  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   background-color: rgb(232, 240, 241);
   border-radius: 25px;
@@ -42,14 +41,12 @@ h1 {
   color: aliceblue;
 }
 
-.image,
 img {
-  width: 100%;
   margin: 0 auto;
   border-radius: 25px;
   padding: 1rem;
-  height: 840px;
   object-fit: cover;
+  height: 840px;
 }
 
 h2,
@@ -62,17 +59,21 @@ a {
   text-align: center;
   margin: 0.5rem;
 }
-p {
+h2 {
+  color: white;
+}
+
+.description p {
   padding: 0.5rem;
   margin: auto;
 }
 
 footer {
+  padding: 2rem;
   color: white;
   margin: auto;
   width: 100%;
   background-color: rgb(40, 7, 230);
   text-align: center;
-  box-shadow: 0 10px 10px rgb(69, 200, 223);
   border-radius: 25px;
 }
