@@ -55,7 +55,7 @@ p {
   color: black;
 }
 
-@media screen and (min-width: 32.5em) {
+@media screen and (min-width: 60em) {
   nav ul {
     display: flex;
     flex-wrap: wrap;
