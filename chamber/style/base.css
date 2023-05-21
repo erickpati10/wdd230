@@ -14,7 +14,14 @@
   background: transparent;
   border: none;
 }
-
+#button:hover {
+  color: white;
+  transform: scale(1.5);
+  font-weight: bold;
+}
+#banner {
+  display: none;
+}
 .section_1 {
   background-color: rgb(6, 45, 240);
   padding: 5px 0;
@@ -58,6 +65,11 @@ nav ul {
 }
 nav ul.open {
   display: block;
+}
+nav ul li a:hover {
+  background-color: lightskyblue;
+  color: #333;
+  transform: scale(1.2);
 }
 
 #date {
