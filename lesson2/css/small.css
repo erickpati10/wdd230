@@ -15,7 +15,7 @@ main {
   /* grid-template-columns: 1fr; */
   margin: auto;
   gap: 2rem;
-  padding: 1rem;
+  padding: 10px;
   text-align: center;
 }
 
@@ -28,7 +28,6 @@ header {
 }
 
 main section {
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   background-color: rgb(232, 240, 241);
   border-radius: 25px;
 }
@@ -41,17 +40,17 @@ h1 {
   color: aliceblue;
 }
 
-img {
-  margin: 0 auto;
-  border-radius: 25px;
-  padding: 1rem;
+.box-1 img,
+.box-2 img,
+.box-3 img {
+  width: 100%;
   object-fit: cover;
+  padding: 10px;
+  border-radius: 25px;
   height: 840px;
 }
-
 h2,
 a {
-  background-color: rgb(11, 11, 11);
   color: rgb(10, 7, 235);
   border-radius: 25px;
   padding: 1rem;
@@ -60,6 +59,7 @@ a {
   margin: 0.5rem;
 }
 h2 {
+  background-color: rgb(11, 11, 11);
   color: white;
 }
 
