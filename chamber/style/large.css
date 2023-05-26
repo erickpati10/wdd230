@@ -87,10 +87,7 @@
     /* padding: 25px; */
     grid-row: 2;
   }
-  .weather h1 {
-    text-align: center;
-    padding: 5px;
-  }
+
   .join {
     display: grid;
     text-align: center;

@@ -42,15 +42,15 @@ function getListElement(chapter, index) {
 }
 
 function addClickEventsToListElement(listElement, index) {
-  listElement.addEventListener("click", (event) => {
-    if (
-      listElement.style.getPropertyValue("text-decoration") == "line-through"
-    ) {
-      listElement.style.setProperty("text-decoration", "none");
-    } else {
-      listElement.style.setProperty("text-decoration", "line-through");
-    }
-  });
+  // listElement.addEventListener("click", (event) => {
+  //   if (
+  //     listElement.style.getPropertyValue("text-decoration") == "line-through"
+  //   ) {
+  //     listElement.style.setProperty("text-decoration", "none");
+  //   } else {
+  //     listElement.style.setProperty("text-decoration", "line-through");
+  //   }
+  // });
 
   listElement.addEventListener("dblclick", (event) => {
     event.target.remove();

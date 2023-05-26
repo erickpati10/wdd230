@@ -41,7 +41,7 @@
   top: -178px;
   right: -142px;
 }
-picture img {
+.hero-pic img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -72,7 +72,8 @@ nav ul li a:hover {
   transform: scale(1.2);
 }
 
-#date {
+.date {
+  color: white;
   text-align: center;
   font-size: 25px;
   background-color: rgb(15, 35, 215);
@@ -96,7 +97,6 @@ main {
   text-align: center;
   padding: 5px;
   font-size: 18px;
-  color: yellow;
 }
 .hero button {
   position: absolute;
@@ -110,30 +110,65 @@ main {
 }
 .event {
   padding: 25px;
-  background-color: gainsboro;
+  background-color: #26d748;
   border: 1px solid gray;
   text-align: center;
 }
 .weather {
-  padding: 25px;
-  background-color: gainsboro;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  padding: 15px;
+  background-color: #26d748;
   border: 1px solid gray;
+}
+.weather h1 {
+  grid-column: 1/3;
+  text-align: center;
+  padding: 5px;
+  margin: 0;
+}
+.weather img {
+  width: 100%;
+}
+.temp {
+  font-size: 43px;
+  text-align: center;
+  color: #405cb1;
+  font-weight: bold;
+  padding-top: 8px;
+  margin: 2rem;
+}
+.weather h2 {
+  grid-row: 3;
+  grid-column: 1/3;
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid black;
+  margin: 10px;
+}
+.wind-speed {
+  grid-column: 1/3;
+  padding: 5px 20px 2px;
+}
+.wind-chill {
+  grid-column: 1/3;
+  padding-left: 25px;
 }
 .join {
   display: none;
-  background-color: gainsboro;
+  background-color: #26d748;
   border: 1px solid gray;
 }
 
 .news {
   padding: 25px;
-  background-color: gainsboro;
+  background-color: #26d748;
   border: 1px solid gray;
   text-align: center;
 }
 .box {
   text-align: center;
-  background-color: gainsboro;
+  background-color: #26d748;
   border: 1px solid gray;
 }
 .box1,
@@ -149,6 +184,7 @@ main {
   margin: 10px;
   border: 1px solid gray;
 }
+
 footer {
   background-color: rgb(6, 45, 240);
 }
