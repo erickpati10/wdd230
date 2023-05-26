@@ -30,15 +30,16 @@ button {
   padding: 0.5rem;
 }
 
-button {
+#submit {
   margin: 0.5rem;
   background-color: black;
   color: white;
   border-radius: 25px;
 }
 
-.delete {
-  width: fit-content;
+button {
+  border: none;
+  background-color: #ddd;
 }
 
 .input {
