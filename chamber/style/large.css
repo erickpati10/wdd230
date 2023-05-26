@@ -27,10 +27,11 @@
   }
 
   .logo img {
-    width: 100%;
+    /* width: 100%; */
     border-radius: 50%;
-    padding: 10px;
-    height: 180px;
+    /* padding: 10px; */
+    /* height: 180px; */
+    margin-left: 0;
   }
   ul {
     display: flex;
@@ -129,13 +130,8 @@
     padding: 25px;
   }
 
-  .info_box {
-    display: flex;
-    border-bottom-style: solid;
-    padding: 10px;
-  }
   .contact {
     text-align: center;
-    padding: 68px;
+    padding: 16px;
   }
 }

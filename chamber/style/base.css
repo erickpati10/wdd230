@@ -195,6 +195,7 @@ footer {
 .info_box {
   text-align: center;
   border-bottom-style: solid;
+  border-bottom-color: white;
 }
 .contact {
   text-align: center;
