@@ -21,8 +21,8 @@ function renderChapters() {
   unorderListContainer.innerHTML = "";
 
   for (let i = 0; i < bookOfMormon.length; i++) {
-    const chapter = bookOfMormon[i];
-    const listElement = getListElement(chapter, i);
+    let chapter = bookOfMormon[i];
+    let listElement = getListElement(chapter, i);
 
     unorderListContainer.appendChild(listElement);
   }
@@ -31,29 +31,22 @@ function renderChapters() {
 function getListElement(chapter, index) {
   let liElement = document.createElement("li");
 
-  addClickEventsToListElement(liElement, index);
-
   let span2 = document.createElement("span");
   span2.innerHTML = chapter;
 
+  let deleteButton = document.createElement("button");
+  deleteButton.textContent = "❌";
+  deleteButton.addEventListener("click", () => {
+    deleteChapter(index);
+  });
+
   liElement.appendChild(span2);
+  liElement.appendChild(deleteButton);
 
   return liElement;
 }
 
-function addClickEventsToListElement(listElement, index) {
-  // listElement.addEventListener("click", (event) => {
-  //   if (
-  //     listElement.style.getPropertyValue("text-decoration") == "line-through"
-  //   ) {
-  //     listElement.style.setProperty("text-decoration", "none");
-  //   } else {
-  //     listElement.style.setProperty("text-decoration", "line-through");
-  //   }
-  // });
-
-  listElement.addEventListener("dblclick", (event) => {
-    event.target.remove();
-    bookOfMormon.splice(index, index + 1);
-  });
+function deleteChapter(index) {
+  bookOfMormon.splice(index, 1);
+  renderChapters();
 }
