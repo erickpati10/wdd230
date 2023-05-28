@@ -42,7 +42,8 @@
   .social {
     padding: 25px;
     top: auto;
-    right: auto;
+    right: 0;
+    left: 0;
   }
   nav ul li a {
     display: flex;
