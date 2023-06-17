@@ -14,7 +14,8 @@ h2,
 p {
   text-align: center;
   margin: 5px;
-  color: rgb(11, 102, 222);
+  /* color: rgb(22, 65, 238); */
+  color: white;
 }
 section {
   border: 1px solid white;
@@ -29,4 +30,5 @@ h1 {
   text-align: center;
   font-size: 2rem;
   color: white;
+  padding: 5px;
 }
