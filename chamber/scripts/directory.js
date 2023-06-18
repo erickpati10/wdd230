@@ -4,31 +4,31 @@ const url =
 async function getBusinessData() {
   const response = await fetch(url);
   const data = await response.json();
-  //console.table(data.stores);
-  displayStore(data.stores);
+  //console.table(data.businesses);
+  displayBusinesses(data.businesses);
 }
 
-getCompaniesData();
+getBusinessData();
 
-const displayStore = (business) => {
+const displayBusinesses = (businesses) => {
   const cards = document.querySelector("div#cards");
 
   stores.forEach((business) => {
     let card = document.createElement("section");
-    let logourl = document.createElement("img");
+    let imgurl = document.createElement("img");
     let address = document.createElement("p");
     let phone = document.createElement("p");
-    let weburl = document.createElement("a");
+    let website = document.createElement("a");
     let h2 = document.createElement("h2");
 
     h2.textContent = `${business.name}`;
     address.textContent = `${business.location}`;
     phone.textContent = `${business.phone}`;
-    weburl.textContent = `${business.website}`;
+    website.textContent = `${business.website}`;
 
     imgurl.setAttribute("src", business.imgurl);
-    logourl.setAttribute("alt", `${business.name} img`);
-    logourl.setAttribute("loading", "lazy");
+    imgurl.setAttribute("alt", `${business.name} img`);
+    imgurl.setAttribute("loading", "lazy");
 
     card.appendChild(imgurl);
     card.appendChild(h2);
