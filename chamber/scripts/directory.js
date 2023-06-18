@@ -1,0 +1,54 @@
+const url =
+  "https://kerokero014.github.io/WDD230_KM/chambers/scripts/data.json";
+
+async function getBusinessData() {
+  const response = await fetch(url);
+  const data = await response.json();
+  //console.table(data.stores);
+  displayStore(data.stores);
+}
+
+getCompaniesData();
+
+const displayStore = (business) => {
+  const cards = document.querySelector("div#cards");
+
+  stores.forEach((business) => {
+    let card = document.createElement("section");
+    let logourl = document.createElement("img");
+    let address = document.createElement("p");
+    let phone = document.createElement("p");
+    let weburl = document.createElement("a");
+    let h2 = document.createElement("h2");
+
+    h2.textContent = `${business.name}`;
+    address.textContent = `${business.location}`;
+    phone.textContent = `${business.phone}`;
+    weburl.textContent = `${business.website}`;
+
+    imgurl.setAttribute("src", business.imgurl);
+    logourl.setAttribute("alt", `${business.name} img`);
+    logourl.setAttribute("loading", "lazy");
+
+    card.appendChild(imgurl);
+    card.appendChild(h2);
+    card.appendChild(address);
+    card.appendChild(phone);
+    card.appendChild(website);
+    cards.appendChild(card);
+  });
+};
+
+const gridbutton = document.querySelector("#grid-button");
+const listbutton = document.querySelector("#list-button");
+const display = document.querySelector("#cards");
+
+gridbutton.addEventListener("click", () => {
+  display.classList.add("grid");
+  display.classList.remove("list");
+});
+
+listbutton.addEventListener("click", () => {
+  display.classList.add("list");
+  display.classList.remove("grid");
+});
