@@ -12,7 +12,7 @@ getBusinessData();
 const displayBusinesses = (businesses) => {
   const cards = document.querySelector("div#cards");
 
-  stores.forEach((business) => {
+  businesses.forEach((business) => {
     let card = document.createElement("section");
     let imgurl = document.createElement("img");
     let address = document.createElement("p");
