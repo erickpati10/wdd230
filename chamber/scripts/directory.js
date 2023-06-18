@@ -1,6 +1,5 @@
 const url =
-  "https://erickpati10.github.io/erickpatino/Library/CloudStorage/OneDrive-Personal/Documents/BYU%20Classes/wdd230-class/wdd230/directory-data%20/data.json";
-
+  "https://erickpati10.github.io/wdd230/chamber/json-folder/data.json";
 async function getBusinessData() {
   const response = await fetch(url);
   const data = await response.json();
