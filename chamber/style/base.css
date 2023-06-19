@@ -184,6 +184,68 @@ main {
   margin: 10px;
   border: 1px solid gray;
 }
+/* #############Directory############ */
+
+.main-box {
+  display: block;
+}
+
+#menu,
+h1 {
+  display: flex;
+  justify-content: center;
+  box-shadow: none;
+  padding: 10px;
+  font-size: 2rem;
+}
+
+button {
+  margin: 10px;
+  padding: 1rem;
+  background-color: #333368;
+  color: white;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  background-color: rgb(47 64 112);
+  color: white;
+}
+
+.cards img {
+  width: 55%;
+}
+
+.cards section {
+  margin: 1rem;
+  box-shadow: -4px 10px 10px #1b17b0;
+  padding: 1rem;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  box-shadow: none;
+}
+.list img {
+  display: none;
+}
+.list section {
+  padding: 8px;
+  margin: 8px;
+}
+.list section {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+}
+.list section p:nth-child(4) {
+  text-align: center;
+}
+
+.list section:nth-child(odd) {
+  background-color: #67e2f4;
+}
 
 footer {
   background-color: rgb(6, 45, 240);

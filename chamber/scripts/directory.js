@@ -10,7 +10,7 @@ async function getBusinessData() {
 getBusinessData();
 
 const displayBusinesses = (businesses) => {
-  const cards = document.querySelector("div#cards");
+  const cards = document.querySelector(".cards");
 
   businesses.forEach((business) => {
     let card = document.createElement("section");
@@ -28,6 +28,8 @@ const displayBusinesses = (businesses) => {
     imgurl.setAttribute("src", business.imgurl);
     imgurl.setAttribute("alt", `${business.name} img`);
     imgurl.setAttribute("loading", "lazy");
+    imgurl.setAttribute("width", "auto");
+    imgurl.setAttribute("height", "auto");
 
     card.appendChild(imgurl);
     card.appendChild(h2);
@@ -40,14 +42,14 @@ const displayBusinesses = (businesses) => {
 
 const gridbutton = document.querySelector("#grid-button");
 const listbutton = document.querySelector("#list-button");
-const display = document.querySelector("#cards");
+const display = document.querySelector(".cards");
 
 gridbutton.addEventListener("click", () => {
-  display.classList.add("grid");
+  display.classList.add("cards");
   display.classList.remove("list");
 });
 
 listbutton.addEventListener("click", () => {
   display.classList.add("list");
-  display.classList.remove("grid");
+  display.classList.remove("cards");
 });

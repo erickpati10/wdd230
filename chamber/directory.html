@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="images/favicon.ico" />
     <title>Wild River Chamber of Commerce</title>
+    <link rel="stylesheet" href="style/normalize.css" />
     <link rel="stylesheet" href="style/base.css" />
     <link rel="stylesheet" href="style/medium.css" />
     <link rel="stylesheet" href="style/large.css" />
@@ -107,22 +108,22 @@
         <button id="button">&#9776;</button>
         <ul id="navigation">
           <!-- <ul> -->
-          <li><a href="#">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="#">Contact</a></li>
-          <li><a href="directory.html"></a></li>
+          <li><a href="directory.html">Directory</a></li>
           <li><a href="#">About Us</a></li>
         </ul>
       </nav>
 
       <p class="date"><span id="date"></span></p>
     </header>
-    <main id="direct_main">
+    <main class="main-box">
       <h1>Bussiness Directory</h1>
       <div id="menu">
         <button id="grid-button">Grid</button>
         <button id="list-button">List</button>
       </div>
-      <div id="cards" class="grid"></div>
+      <div class="cards"></div>
     </main>
 
     <footer>
@@ -147,8 +148,8 @@
         </p>
       </div>
     </footer>
-    <!-- <script src="scripts/script.js"></script>
-    <script src="scripts/windchill.js"></script> -->
+    <script src="scripts/script.js"></script>
+    <script src="scripts/windchill.js"></script>
     <script src="scripts/directory.js"></script>
   </body>
 </html>
