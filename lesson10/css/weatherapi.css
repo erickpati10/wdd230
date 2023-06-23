@@ -1,0 +1,10 @@
+.weather-box {
+  text-align: center;
+  border: 1px solid gray;
+  max-width: 600px;
+  margin: 1rem auto;
+  font-size: 25px;
+  color: blue;
+  font-family: serif;
+  background-color: black;
+}
