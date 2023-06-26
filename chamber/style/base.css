@@ -112,16 +112,7 @@ main {
   padding: 5px;
   font-size: 18px;
 }
-.hero button {
-  position: absolute;
-  right: 3rem;
-  bottom: 19rem;
-  border: 1px solid black;
-  border-radius: 25px;
-  padding: 10px;
-  background-color: black;
-  color: white;
-}
+
 .event {
   padding: 25px;
   background-color: #26d748;
