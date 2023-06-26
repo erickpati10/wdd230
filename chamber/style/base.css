@@ -203,12 +203,12 @@ main {
   font-size: 20px;
   border-radius: 25px;
 }
-.discover-page h1,
+/* .discover-page h1,
 p {
   text-align: center;
   padding: 10px;
   font-size: 20px;
-}
+} */
 
 /* ##############Directory################# */
 #menu,
@@ -356,7 +356,7 @@ footer {
 .weather p {
   float: right;
   font-size: 3.5rem;
-  margin-top: 2.5rem;
+  margin-top: 1.5rem;
 }
 .weather img {
   width: 50%;

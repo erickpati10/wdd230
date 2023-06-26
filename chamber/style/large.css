@@ -89,6 +89,11 @@
     /* padding: 25px; */
     grid-row: 2;
   }
+  .weather p {
+    float: right;
+    font-size: 39px;
+    margin-top: 1rem;
+  }
 
   .join {
     display: grid;
