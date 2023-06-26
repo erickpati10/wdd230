@@ -64,6 +64,20 @@
     height: 100%;
     object-fit: cover;
   }
+  #banner {
+    /* display: none;
+    text-align: center;
+    padding: 10px;
+    background-color: navy;
+    color: white; */
+    position: absolute;
+    top: 4%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+  }
   .weather-pic {
     display: block;
   }
@@ -91,8 +105,8 @@
   }
   .weather p {
     float: right;
-    font-size: 39px;
-    margin-top: 1rem;
+    font-size: 48px;
+    margin-top: 20px;
   }
 
   .join {

@@ -20,11 +20,21 @@
   font-weight: bold;
 }
 #banner {
-  display: none;
+  /* display: none;
   text-align: center;
   padding: 10px;
   background-color: navy;
+  color: white; */
+  position: absolute;
+  top: 68%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
+  padding: 5px;
+}
+.hero {
+  position: relative;
 }
 .section_1 {
   background-color: rgb(6, 45, 240);
@@ -355,8 +365,8 @@ footer {
 
 .weather p {
   float: right;
-  font-size: 3.5rem;
-  margin-top: 1.5rem;
+  font-size: 66px;
+  margin-top: 30px;
 }
 .weather img {
   width: 50%;

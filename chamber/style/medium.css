@@ -78,7 +78,7 @@
     padding: 15px;
     font-size: 35px;
   }
-  .hero button {
+  /* .hero button {
     position: absolute;
     right: 3rem;
     bottom: 5rem;
@@ -88,6 +88,20 @@
     background-color: black;
     color: white;
     font-size: 25px;
+  } */
+  #banner {
+    /* display: none;
+    text-align: center;
+    padding: 10px;
+    background-color: navy;
+    color: white; */
+    position: absolute;
+    top: 90%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px;
   }
   .event {
     grid-row: 7;
@@ -100,8 +114,8 @@
   }
 
   .weather p {
-    font-size: 28px;
-    margin-top: 11px;
+    font-size: 37px;
+    margin-top: 16px;
   }
 
   /* .temp {
