@@ -6,29 +6,45 @@
     <link rel="icon" href="images/favicon.ico" />
     <title>AmySolution</title>
     <link rel="stylesheet" href="css/base.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header>
-      <div></div>
-      <div class="name">
-        <h1>AmySolution</h1>
+      <div class="contact-info">
+        <div class="phone-icon">
+          <i class="fa-solid fa-mobile-screen-button"></i>
+          <span class="phone-number">945331799</span>
+        </div>
+        <div class="email-icon">
+          <i class="fa-solid fa-at"></i>
+          <span class="email-address">example@example.com</span>
+        </div>
       </div>
-      <picture class="logo">
-        <img src="images/logo.jpeg" alt="" />
-      </picture>
-      <nav>
-        <ul>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Historia</a></li>
-          <li><a href="#">Equipos</a></li>
-        </ul>
-      </nav>
+      <div class="second-section">
+        <picture class="logo">
+          <img src="images/logo.jpeg" alt="" />
+        </picture>
+        <div class="name">
+          <h1>AmySolution</h1>
+        </div>
+        <nav class="pages">
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Historia</a></li>
+            <li><a href="#">Equipos</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
       <div class="hero">
-        <picture>
-          <img src="images/hero.jpeg" alt="" />
-        </picture>
+        <img src="images/hero.jpeg" alt="" />
       </div>
       <div class="weather"></div>
       <div class="summary">
@@ -44,21 +60,16 @@
         </p>
       </div>
     </main>
-    <footer>
-      <picture class="social">
+    <footer class="footer">
+      <div class="logo">
+        <img src="images/logo.jpeg" alt="" />
+      </div>
+      <div class="social">
         <a href="https://www.facebook.com/amysolution">
-          <img src="images/Facebook-icon.png" alt="" />
+          <i class="fa-brands fa-square-facebook"></i>
         </a>
-        <img src="images/instagram_icon.png" alt="" />
-      </picture>
-      <div class="last-updated">
-        <p>
-          &copy;<span id="year"></span> | Bountiful Food | .:|:. Erick Patino
-          .:|:. | WDD 230 Project | Last Updated:
-          <span id="date-time"></span>
-        </p>
+        <i class="fa-brands fa-instagram"></i>
       </div>
     </footer>
-    <script src="scripts/lastUpdate.js"></script>
   </body>
 </html>
