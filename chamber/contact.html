@@ -118,61 +118,52 @@
 
       <p class="date"><span id="date"></span></p>
     </header>
-    <main class="join-box">
-      <h1>Join Our Membership</h1>
-      <form method="get" action="thankyou.html">
-        <label for="first-name">First Name:</label>
-        <input type="text" id="first-name" name="first-name" required />
+    <main class="contact-box">
+      <h1>Contact Us</h1>
 
-        <label for="last-name">Last Name:</label>
-        <input type="text" id="last-name" name="last-name" required />
+      <ul class="info">
+        <h2>General Information</h2>
+        <br />
 
-        <label for="position-title">Business Position Title:</label>
-        <input
-          type="text"
-          id="position-title"
-          name="position-title"
-          pattern="[A-Za-z\s\-]{7,}"
-          title="Only alpha characters, hyphens, and spaces allowed. Minimum 7 characters."
-        />
+        <li><strong>Address:</strong> 167 Main Street, Lehi, Ut, 84043</li>
+        <li><strong>Phone:</strong> (801) 456-7890</li>
+        <li><strong>Email:</strong> info@ywildriverchamber.com</li>
+      </ul>
+      <ul class="officer-list">
+        <h2>Chamber Officers and Board of Directors</h2>
+
+        <li>
+          <strong>Mayor:</strong> Logan Ashley
+          <strong>Phone:</strong> 801.567.7890
+        </li>
+        <li>
+          <strong>City Clerk:</strong> Smith Cody
+          <strong>Phone:</strong> 801.309.2908
+        </li>
+        <li>
+          <strong>Human Resources:</Resources:br></strong> Miller William
+          <strong>Phone:</strong> 801.987.4987
+        </li>
+        <li>
+          <strong>City Council:</strong> Cook John
+          <strong>Phone:</strong> 801.768.4523
+        </li>
+      </ul>
+      <h2>Contact Form</h2>
+      <form action="thankyou.html" method="get">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required />
 
         <label for="email">Email:</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          required
-          placeholder="example@example.com"
-        />
+        <input type="email" id="email" name="email" required />
 
-        <label for="cell-phone">Cell Phone Number:</label>
-        <input type="tel" id="cell-phone" name="cell-phone" required />
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
 
-        <label for="business-name">Business Name/Title:</label>
-        <input type="text" id="business-name" name="business-name" required />
-
-        <label for="membership-level">Membership Level:</label>
-        <select id="membership-level" name="membership-level">
-          <option value="np-membership">NP Membership</option>
-          <option value="bronze-membership">Bronze Membership</option>
-          <option value="silver-membership">Silver Membership</option>
-          <option value="gold-membership">Gold Membership</option>
-        </select>
-
-        <label for="business-description">Business Description:</label>
-        <textarea
-          id="business-description"
-          name="business-description"
-        ></textarea>
-
-        <input
-          type="hidden"
-          id="form-loaded-time"
-          name="form-loaded-time"
-          value=""
-        />
-
-        <input type="submit" value="Submit" />
+        <button type="submit">Submit</button>
       </form>
     </main>
 
@@ -199,6 +190,7 @@
       </div>
     </footer>
     <script src="scripts/script.js"></script>
-    <script src="scripts/hiddenDate.js"></script>
+    <script src="scripts/banner.js"></script>
+    <script src="scripts/chamber-weatherapi.js"></script>
   </body>
 </html>

@@ -139,6 +139,12 @@
     margin: 10px;
   }
 
+  /* #############Contact################# */
+  .contact-box {
+    display: flex;
+    flex-direction: column;
+  }
+
   /* #############Directory############ */
 
   .main-box {

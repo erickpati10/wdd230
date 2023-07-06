@@ -189,6 +189,36 @@ main {
   margin: 10px;
   border: 1px solid gray;
 }
+
+/* ##################Contact################## */
+.contact-box {
+  display: block;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.contact-box h1,
+h2 {
+  color: black;
+  text-align: center;
+}
+
+.info,
+.officer-list {
+  display: block;
+  border: 2px solid black;
+  border-radius: 25px;
+  padding: 10px;
+}
+.officer-list li,
+.info li {
+  padding: 25px;
+}
+button:hover {
+  background-color: #45a049;
+}
+
 /* ##############Discover################# */
 .discover-page {
   display: flex;
@@ -213,6 +243,7 @@ h1 {
   box-shadow: none;
   padding: 10px;
   font-size: 1.5rem;
+  color: ghostwhite;
 }
 
 button {
