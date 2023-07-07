@@ -12,6 +12,8 @@
   }
   picture img {
     height: auto;
+  }
+  .box img {
     width: 200px;
   }
   #button {

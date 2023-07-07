@@ -39,9 +39,7 @@
 .hero {
   position: relative;
 }
-.hero h1 {
-  color: cornsilk;
-}
+
 .section_1 {
   background-color: rgb(6, 45, 240);
   padding: 5px 0;
@@ -120,6 +118,7 @@ main {
   text-align: center;
   padding: 5px;
   font-size: 18px;
+  color: yellow;
 }
 
 .event {
