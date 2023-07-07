@@ -99,6 +99,9 @@ main {
   gap: 5px;
   padding: 2rem;
 }
+.body-container h1 {
+  color: whitesmoke;
+}
 .hero {
   /* padding: 25px; */
   grid-row: 1;
@@ -115,7 +118,7 @@ main {
 
 .event {
   padding: 25px;
-  background-color: #26d748;
+  background-color: #7887be;
   border: 1px solid gray;
   text-align: center;
 }
@@ -161,19 +164,19 @@ main {
 } */
 .join {
   display: none;
-  background-color: #26d748;
+  background-color: #7887be;
   border: 1px solid gray;
 }
 
 .news {
   padding: 25px;
-  background-color: #26d748;
+  background-color: #7887be;
   border: 1px solid gray;
   text-align: center;
 }
 .box {
   text-align: center;
-  background-color: #26d748;
+  background-color: #7887be;
   border: 1px solid gray;
 }
 .box1,
@@ -188,6 +191,14 @@ main {
   padding: 2rem;
   margin: 10px;
   border: 1px solid gray;
+}
+.contact,
+.contact h2,
+a {
+  color: white;
+}
+.footer-container p {
+  color: white;
 }
 
 /* ##################Contact################## */
@@ -244,7 +255,6 @@ h1 {
   box-shadow: none;
   padding: 10px;
   font-size: 1.5rem;
-  color: ghostwhite;
 }
 
 button {
@@ -369,7 +379,7 @@ footer {
 
 .weather {
   padding: 15px;
-  background-color: #26d748;
+  background-color: #7887be;
   border: 1px solid gray;
 }
 .weather h1 {
@@ -384,6 +394,7 @@ footer {
   float: right;
   font-size: 66px;
   margin-top: 30px;
+  color: white;
 }
 .weather img {
   width: 50%;
