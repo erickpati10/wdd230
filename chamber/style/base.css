@@ -189,14 +189,14 @@ main {
 .box2 {
   padding: 1rem;
   margin: 10px;
-  border: 1px solid gray;
+  border: 1px solid white;
   object-fit: cover;
 }
 .box3 {
   display: none;
   padding: 2rem;
   margin: 10px;
-  border: 1px solid gray;
+  border: 1px solid white;
 }
 .contact,
 .contact h2,
