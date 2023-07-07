@@ -138,13 +138,13 @@
   .box1,
   .box2 {
     margin: 10px;
-    border: 1px solid gray;
+    border: 1px solid white;
   }
   .box3 {
     display: none;
     padding: 2rem;
     margin: 10px;
-    border: 1px solid gray;
+    border: 1px solid white;
   }
 
   /* #############Directory############ */
