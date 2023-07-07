@@ -275,6 +275,9 @@ button {
   background-color: rgb(47 64 112);
   color: white;
 }
+.cards h2 {
+  color: white;
+}
 
 .cards img {
   width: 55%;
