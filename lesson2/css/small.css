@@ -44,7 +44,7 @@ h1 {
 .box-2 img,
 .box-3 img {
   width: 100%;
-  object-fit: cover;
+  /* object-fit: cover; */
   padding: 10px;
   border-radius: 25px;
   height: 840px;
