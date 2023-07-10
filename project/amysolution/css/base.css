@@ -21,3 +21,8 @@ nav ul {
 .logo img {
   border-radius: 50%;
 }
+
+.social img {
+  width: 30px;
+  padding: 20px;
+}
