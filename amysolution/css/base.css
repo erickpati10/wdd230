@@ -19,10 +19,11 @@ nav ul {
   object-fit: cover;
 }
 .logo img {
+  height: 100px;
   border-radius: 50%;
 }
 
 .social img {
-  width: 30px;
+  width: 25px;
   padding: 20px;
 }
