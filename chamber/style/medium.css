@@ -147,6 +147,12 @@
     border: 1px solid white;
   }
 
+  /* ##############Discover################# */
+  .discover-page img {
+    width: 560px;
+    border-radius: 25px;
+  }
+
   /* #############Directory############ */
 
   .cards {

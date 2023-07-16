@@ -139,6 +139,12 @@
     margin: 10px;
   }
 
+  /* ##############Discover################# */
+  .discover-page img {
+    width: 640px;
+    border-radius: 25px;
+  }
+
   /* #############Contact################# */
   .contact-box {
     display: flex;
