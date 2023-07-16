@@ -247,6 +247,10 @@ button:hover {
   align-items: center;
   text-align: center;
 }
+.discover-page img {
+  width: 260px;
+  border-radius: 25px;
+}
 #visit-info {
   background-color: #292626;
   color: white;
