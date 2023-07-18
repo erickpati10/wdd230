@@ -13,7 +13,7 @@
         <h1>Bountiful Food</h1>
       </div>
       <picture class="logo">
-        <img src="" alt="" />
+        <img src="images/Bountiful-logo.png" alt="Webpage Logo" />
       </picture>
       <nav>
         <ul>
@@ -28,9 +28,28 @@
         <picture>
           <img src="images/fuits.jpeg" alt="" />
         </picture>
+        <div class="button">
+          <h1>🍹🍊 Create Your Own Fresh Fruit Drink Mix! 🍓🍍</h1>
+          <a href="fresh.html">Get Started</a>
+        </div>
       </div>
-      <div class="weather"></div>
+      <div class="weather-card">
+        <h2>Carlsbad Weather</h2>
+        <div class="current-weather">
+          <p><strong>Temperature:</strong> <span id="current-temp"></span>°C</p>
+          <p><strong>Condition:</strong> <span id="condition"></span></p>
+          <p><strong>Humidity:</strong> <span id="humidity"></span>%</p>
+        </div>
+        <div class="forecast">
+          <h3>3-Day Forecast:</h3>
+          <div class="forecast-items" id="forecast-items">
+            <!-- The 3-day forecast items will be added here dynamically -->
+          </div>
+        </div>
+      </div>
       <div class="summary">
+        <img src="images/Southern-California.png" alt="Southern California" />
+
         <p>
           Location: Santa Monica is situated on the southern coast of
           California, bordered by the Pacific Ocean to the west. It is
@@ -50,6 +69,7 @@
         </p>
       </div>
     </main>
+
     <footer>
       <picture class="social">
         <img src="images/Facebook-icon.png" alt="" />
@@ -64,5 +84,6 @@
       </div>
     </footer>
     <script src="scripts/lastUpdate.js"></script>
+    <script src="scripts/weathercard.js"></script>
   </body>
 </html>

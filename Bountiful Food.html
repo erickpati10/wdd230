@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)http://127.0.0.1:5500/project/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="http://127.0.0.1:5500/project/images/favicon.ico">
+    <title>Bountiful Food</title>
+    <link rel="stylesheet" href="./Bountiful Food_files/small.css">
+  </head>
+  <body>
+    <header>
+      <div class="name">
+        <h1>Bountiful Food</h1>
+      </div>
+      <picture class="logo">
+        <img src="./Bountiful Food_files/Bountiful-logo.png" alt="Webpage Logo">
+      </picture>
+      <nav>
+        <ul>
+          <li><a href="http://127.0.0.1:5500/project/index.html#">Home</a></li>
+          <li><a href="http://127.0.0.1:5500/project/index.html#">Fresh</a></li>
+          <li><a href="http://127.0.0.1:5500/project/index.html#">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="hero">
+        <picture>
+          <img src="./Bountiful Food_files/fuits.jpeg" alt="">
+        </picture>
+        <div class="button">
+          <h1>🍹🍊 Create Your Own Fresh Fruit Drink Mix! 🍓🍍</h1>
+          <a href="http://127.0.0.1:5500/project/fresh.html">Get Started</a>
+        </div>
+      </div>
+      <div class="weather-card">
+        <h2>Carlsbad Weather</h2>
+        <div class="current-weather">
+          <p><strong>Temperature:</strong> <span id="current-temp"></span>°C</p>
+          <p><strong>Condition:</strong> <span id="condition"></span></p>
+          <p><strong>Humidity:</strong> <span id="humidity"></span>%</p>
+        </div>
+        <div class="forecast">
+          <h3>3-Day Forecast:</h3>
+          <div class="forecast-items" id="forecast-items">
+            <!-- The 3-day forecast items will be added here dynamically -->
+          </div>
+        </div>
+      </div>
+      <div class="summary">
+        <img src="./Bountiful Food_files/Southern-California.png" alt="Southern California">
+
+        <p>
+          Location: Santa Monica is situated on the southern coast of
+          California, bordered by the Pacific Ocean to the west. It is
+          approximately 16 miles (26 kilometers) west of downtown Los Angeles.
+          <br>
+          Climate: Santa Monica enjoys a Mediterranean climate characterized by
+          mild, pleasant winters and warm, dry summers. Average temperatures
+          range from around 55°F (13°C) in winter to 75°F (24°C) in summer. The
+          area typically experiences coastal fog, known as the "June Gloom,"
+          during the early summer mornings. Cultural Attractions: The city
+          boasts cultural attractions such as the Santa Monica Pier Aquarium,
+          which provides an educational experience about marine life. The
+          Annenberg Community Beach House offers public facilities, including a
+          pool, gallery space, and community events. The Getty Villa, a museum
+          dedicated to ancient art, is located just outside Santa Monica in the
+          Pacific Palisades.
+        </p>
+      </div>
+    </main>
+
+    <footer>
+      <picture class="social">
+        <img src="./Bountiful Food_files/Facebook-icon.png" alt="">
+        <img src="./Bountiful Food_files/instagram_icon.png" alt="">
+      </picture>
+      <div class="last-updated">
+        <p>
+          ©<span id="year">2023</span> | Bountiful Food | .:|:. Erick Patino
+          .:|:. | WDD 230 Project | Last Updated:
+          <span id="date-time">7/17/2023 20:31:27</span>
+        </p>
+      </div>
+    </footer>
+    <script src="./Bountiful Food_files/lastUpdate.js"></script>
+    <script src="./Bountiful Food_files/chamber-weatherapi.js"></script>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
