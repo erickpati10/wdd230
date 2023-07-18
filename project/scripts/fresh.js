@@ -1,6 +1,5 @@
-let fruitData; // Declare the 'fruitData' variable in the global scope
+let fruitData;
 
-// Function to populate the select elements with the available fruits
 async function populateFruitsSelect() {
   try {
     const response = await fetch(
@@ -9,7 +8,7 @@ async function populateFruitsSelect() {
     if (!response.ok) {
       throw new Error("Failed to fetch fruit data.");
     }
-    fruitData = await response.json(); // Assign the fetched data to the global 'fruitData' variable
+    fruitData = await response.json();
 
     if (!Array.isArray(fruitData)) {
       throw new Error("Invalid fruit data format.");
@@ -17,16 +16,13 @@ async function populateFruitsSelect() {
 
     const fruitsSelects = document.querySelectorAll('select[id^="fruit"]');
     fruitsSelects.forEach((select) => {
-      // Clear existing options
       select.innerHTML = "";
 
-      // Add "Select Fruit" option as the first choice
       const selectOption = document.createElement("option");
-      selectOption.value = ""; // Set the value of the empty option to an empty string
-      selectOption.textContent = "- Select Fruit -"; // Display text for the empty option
+      selectOption.value = "";
+      selectOption.textContent = "- Select Fruit -";
       select.appendChild(selectOption);
 
-      // Populate select with available fruits
       fruitData.forEach((fruit) => {
         const option = document.createElement("option");
         option.value = fruit.name;
@@ -39,7 +35,6 @@ async function populateFruitsSelect() {
   }
 }
 
-// Function to handle form submission and display order details
 function handleFormSubmit(event) {
   event.preventDefault();
 
