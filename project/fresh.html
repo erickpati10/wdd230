@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fresh Page</title>
+    <link rel="stylesheet" href="css/small.css" />
+  </head>
+  <body>
+    <header>
+      <div class="name">
+        <h1>Bountiful Food</h1>
+      </div>
+      <picture class="logo">
+        <img src="images/Bountiful-logo.png" alt="Webpage Logo" />
+      </picture>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="fresh.html">Fresh</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="form-container">
+        <form id="drink-form">
+          <label for="first-name">First Name:</label>
+          <input type="text" id="first-name" class="form-input" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" class="form-input" required />
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" class="form-input" required />
+
+          <label for="fruit1">Fruit 1:</label>
+          <select id="fruit1" class="form-input" required></select>
+
+          <label for="fruit2">Fruit 2:</label>
+          <select id="fruit2" class="form-input" required></select>
+
+          <label for="fruit3">Fruit 3:</label>
+          <select id="fruit3" class="form-input" required></select>
+
+          <label for="special-instructions">Special Instructions:</label>
+          <textarea id="special-instructions" class="form-input"></textarea>
+
+          <button type="submit" class="form-submit">Submit</button>
+        </form>
+      </div>
+
+      <div id="order-details"></div>
+    </main>
+    <footer>
+      <picture class="social">
+        <img src="images/Facebook-icon.png" alt="" />
+        <img src="images/instagram_icon.png" alt="" />
+      </picture>
+      <div class="last-updated">
+        <p>
+          &copy;<span id="year"></span> | Bountiful Food | .:|:. Erick Patino
+          .:|:. | WDD 230 Project | Last Updated:
+          <span id="date-time"></span>
+        </p>
+      </div>
+    </footer>
+
+    <script src="scripts/fresh.js"></script>
+  </body>
+</html>
