@@ -14,22 +14,22 @@ async function getCurrentWeather() {
   }
 }
 
-async function getThreeDayForecast() {
-  const url =
-    "https://api.openweathermap.org/data/2.5/forecast/daily?q=Carlsbad&units=metric&cnt=4&appid=14b32573fb22377f8adba79a8cea1ee7";
-  try {
-    const response = await fetch(url);
+// async function getThreeDayForecast() {
+//   const url =
+//     "https://api.openweathermap.org/data/2.5/forecast/daily?q=Carlsbad&units=metric&cnt=4&appid=14b32573fb22377f8adba79a8cea1ee7";
+//   try {
+//     const response = await fetch(url);
 
-    if (!response.ok) {
-      throw new Error("Forecast data not available");
-    }
-    const data = await response.json();
-    return data;
-  } catch (error) {
-    console.log("Error fetching forecast data:", error);
-    return null;
-  }
-}
+//     if (!response.ok) {
+//       throw new Error("Forecast data not available");
+//     }
+//     const data = await response.json();
+//     return data;
+//   } catch (error) {
+//     console.log("Error fetching forecast data:", error);
+//     return null;
+//   }
+// }
 
 function displayWeatherData(currentWeather, forecastData) {
   const currentTempElement = document.getElementById("current-temp");
@@ -49,7 +49,7 @@ function displayWeatherData(currentWeather, forecastData) {
     );
     const temp = forecastData.list[i].temp.day.toFixed(1);
     const forecastItem = document.createElement("div");
-    forecastItem.innerHTML = `<p><strong>${date}:</strong> ${temp}°C</p>`;
+    forecastItem.innerHTML = `<p><strong>${date}:</strong> ${temp}°F</p>`;
     forecastItemsContainer.appendChild(forecastItem);
   }
 }

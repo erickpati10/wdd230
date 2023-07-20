@@ -27,7 +27,12 @@
       <div id="total-drinks">Total Specialty Drinks Submitted: 0</div>
       <div class="hero">
         <picture>
-          <img src="images/fuits.jpeg" alt="" />
+          <img
+            src="images/placeholder.jpeg"
+            data-src="images/fuits.jpeg"
+            alt="Hero image"
+            loading="lazy"
+          />
         </picture>
         <div class="button">
           <h1>🍹🍊 Create Your Own Fresh Fruit Drink Mix! 🍓🍍</h1>
@@ -43,13 +48,16 @@
         </div>
         <div class="forecast">
           <h3>3-Day Forecast:</h3>
-          <div class="forecast-items" id="forecast-items">
-            <!-- The 3-day forecast items will be added here dynamically -->
-          </div>
+          <div class="forecast-items" id="forecast-items"></div>
         </div>
       </div>
       <div class="summary">
-        <img src="images/Southern-California.png" alt="Southern California" />
+        <img
+          src="images/placeholder.jpeg"
+          data-src="images/Southern-California.png"
+          alt="Southern California"
+          loading="lazy"
+        />
 
         <p>
           Location: Santa Monica is situated on the southern coast of
@@ -97,5 +105,6 @@
     <script src="scripts/lastUpdate.js"></script>
     <script src="scripts/weathercard.js"></script>
     <script src="scripts/total-drinks.js"></script>
+    <script src="scripts/lazy-load.js"></script>
   </body>
 </html>
