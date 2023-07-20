@@ -6,12 +6,19 @@
 header {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  background-color: white;
   text-align: center;
-  border-radius: 25px;
+  margin: 25px;
+  background-color: #f2f2f2;
+
+  /* border-radius: 25px; */
 }
 .main-container {
   padding: 20px;
+}
+
+.hero {
+  width: 80%;
+  margin: auto;
 }
 nav ul {
   display: flex;
@@ -69,7 +76,6 @@ nav ul li a {
 .button a:hover {
   background-color: #45a049;
 }
-/* Style for the summary section */
 .summary {
   background-color: #f9f9f9;
   padding: 20px;
@@ -79,7 +85,6 @@ nav ul li a {
   margin: 15px auto;
 }
 
-/* Style for the image within the summary section */
 .summary img {
   display: block;
   max-width: 100%;
@@ -88,7 +93,6 @@ nav ul li a {
   margin: auto;
 }
 
-/* Style for the paragraphs within the summary section */
 .summary p {
   font-size: 16px;
   line-height: 1.6;
@@ -96,53 +100,79 @@ nav ul li a {
   padding: 15px;
 }
 
-/* Style for the link within the summary section */
 .summary a {
   color: #007bff;
   text-decoration: none;
 }
 
-/* Style for the link on hover */
 .summary a:hover {
   text-decoration: underline;
 }
 
-/* #############Footer#################### */
-/* Apply general styles to the footer */
+#total-drinks {
+  /* background-color: #f2f2f2; */
+  padding: 10px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #2c3fee;
+  margin-top: 20px;
+}
+
+/* ############# Footer #################### */
+
 footer {
-  background-color: #f8f8f8;
-  padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px 4rem;
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  margin: 25px;
 }
 
-/* Style the social media icons */
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.social {
+  display: flex;
+  gap: 10px;
+  padding: 15px;
+}
+
 .social img {
   width: 30px;
   height: 30px;
-  margin-right: 10px;
+}
+.contact {
+  padding: 10px;
+}
+.contact p {
+  margin: 10px 0;
 }
 
-/* Style the last-updated section */
+.contact-us h1 {
+  font-size: 20px;
+  text-align: center;
+  color: rgb(42, 42, 82);
+}
+
+.contact-us p {
+  margin: 5px 0;
+  color: rgb(42, 42, 82);
+  text-align: center;
+}
+
+.last-updated,
 .last-updated p {
-  font-size: 12px;
-  color: #777;
+  text-align: right;
+  color: rgb(42, 42, 82);
 }
 
-/* Style the copyright year */
-#year {
-  font-weight: bold;
-}
-
-/* Style the separator between elements */
-.last-updated::before {
-  /* content: "|"; */
-  margin: 0 5px;
-  color: #777;
-}
-
-/* ########################Weather#################### */
+/* ######################## Weather #################### */
 
 .weather-card {
   background-color: #f7f7f7;
@@ -172,7 +202,6 @@ h3 {
 }
 /* #######################Fresh Page##################### */
 
-/* Style for the form container */
 .form-container {
   max-width: 500px;
   margin: 0 auto;
@@ -182,7 +211,6 @@ h3 {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Style for form inputs and labels */
 .form-input {
   display: block;
   width: 100%;
@@ -197,7 +225,6 @@ h3 {
   font-weight: bold;
 }
 
-/* Style for the submit button */
 .form-submit {
   display: block;
   padding: 10px;
@@ -210,7 +237,6 @@ h3 {
   margin: auto;
 }
 
-/* Style for the order details section */
 #order-details {
   text-align: center;
   max-width: 300px;
@@ -221,19 +247,16 @@ h3 {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Style for order details headings */
 #order-details h2,
 #order-details h3 {
   margin-top: 0;
   margin-bottom: 10px;
 }
 
-/* Style for order details paragraphs */
 #order-details p {
   margin-bottom: 5px;
 }
 
-/* Style for the total nutritional values */
 #order-details p strong {
   color: #007bff;
 }
@@ -243,7 +266,6 @@ h3 {
   color: red;
 }
 
-/* Style for select elements */
 select {
   width: 100%;
   padding: 10px;
@@ -254,7 +276,7 @@ select {
 
 /* ################# About Us ############################ */
 
-main {
+.fresh-section {
   padding: 20px;
   max-width: 800px;
   margin: 0 auto;
@@ -289,7 +311,4 @@ h2 {
   margin-bottom: 40px;
   border-bottom: 1px solid #ccc;
   padding-bottom: 20px;
-}
-header {
-  margin: 25px;
 }
