@@ -3,8 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/favicon.ico" />
     <title>About Us</title>
     <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
   </head>
   <body>
     <header>
@@ -14,8 +17,9 @@
       <picture class="logo">
         <img src="images/Bountiful-logo.png" alt="Webpage Logo" />
       </picture>
+      <button id="mobile-menu-button">&#9776;</button>
       <nav>
-        <ul>
+        <ul id="mobile-menu">
           <li><a href="index.html">Home</a></li>
           <li><a href="fresh.html">Fresh</a></li>
           <li><a href="about-us.html">About Us</a></li>
@@ -96,10 +100,13 @@
     <footer>
       <div class="social">
         <a href="https://www.facebook.com/" target="_blank">
-          <img src="images/Facebook-icon.png" alt=""
+          <img src="images/Facebook-icon.png" alt="Social Facebook Icon"
         /></a>
         <a href="https://www.instagram.com/" target="_blank">
-          <img src="images/instagram_icon.png" alt=""
+          <img src="images/instagram-icon.png" alt="Social Instagram Icon"
+        /></a>
+        <a href="https://www.twitter.com/" target="_blank">
+          <img src="images/Twitter_icon.png" alt="Social Twitter Icon"
         /></a>
       </div>
 
@@ -117,5 +124,6 @@
       </div>
     </footer>
     <script src="scripts/lastUpdate.js"></script>
+    <script src="scripts/button.js"></script>
   </body>
 </html>

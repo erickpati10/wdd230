@@ -28,19 +28,3 @@ function handleIntersection(entries, observer) {
     }
   });
 }
-
-const visitInfo = document.querySelector("#visit-info");
-
-const lastVisit = localStorage.getItem("lastVisit");
-const currentTime = new Date().getTime();
-localStorage.setItem("lastVisit", currentTime);
-
-if (lastVisit) {
-  const timeDifference = calculateTimeDifference(lastVisit, currentTime);
-  const daysDifference = Math.round(timeDifference / (1000 * 60 * 60 * 24));
-  visitInfo.textContent = `Days since your last visit: ${daysDifference}`;
-}
-
-function calculateTimeDifference(startTime, endTime) {
-  return endTime - startTime;
-}

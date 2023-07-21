@@ -12,29 +12,15 @@ header {
 
   /* border-radius: 25px; */
 }
-.main-container {
-  padding: 20px;
-}
 
 .hero {
-  width: 80%;
+  width: 90%;
   margin: auto;
 }
-nav ul {
-  display: flex;
-  gap: 2rem;
-  list-style: none;
-  justify-content: center;
-  padding: 30px;
-}
-nav ul li a {
-  text-decoration: none;
-  font-size: 25px;
-  color: rgb(42, 42, 82);
-}
+
 .hero img {
   width: 100%;
-  height: 420px;
+  height: 320px;
   margin-bottom: 25px;
 }
 .hero h1 {
@@ -42,18 +28,23 @@ nav ul li a {
   border-radius: 25px;
   text-align: center;
   position: absolute;
-  top: 40%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: black;
+  font-size: 12px;
 }
 
 .logo {
-  padding: 10px;
+  padding: 20px;
+}
+.logo img {
+  width: 90px;
 }
 .name h1 {
-  padding: 25px;
+  padding: 21px;
   color: rgb(42, 42, 82);
+  font-size: 15px;
 }
 .button a {
   position: absolute;
@@ -67,9 +58,9 @@ nav ul li a {
   background-color: #4caf50;
   color: #fff;
   text-decoration: none;
-  padding: 15px 25px;
+  padding: 8px 16px;
   border-radius: 4px;
-  font-size: 18px;
+  font-size: 12px;
   transition: background-color 0.3s ease;
 }
 
@@ -114,7 +105,7 @@ nav ul li a {
   padding: 10px;
   text-align: center;
   font-family: Arial, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   color: #2c3fee;
   margin-top: 20px;
 }
@@ -123,12 +114,12 @@ nav ul li a {
 
 footer {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  padding: 20px 4rem;
+  padding: 5px;
   background-color: #f2f2f2;
   font-family: Arial, sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   margin: 25px;
 }
 
@@ -168,8 +159,9 @@ footer {
 
 .last-updated,
 .last-updated p {
-  text-align: right;
+  text-align: center;
   color: rgb(42, 42, 82);
+  margin: 5px 0;
 }
 
 /* ######################## Weather #################### */
@@ -203,12 +195,15 @@ h3 {
 /* #######################Fresh Page##################### */
 
 .form-container {
-  max-width: 500px;
+  max-width: 280px;
   margin: 0 auto;
   padding: 20px;
   background-color: #f8f8f8;
   border-radius: 8px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+#drink-form {
+  margin: 0 22px 0 0;
 }
 
 .form-input {
@@ -286,12 +281,6 @@ select {
   color: #007bff;
 }
 
-/* div {
-  margin-bottom: 40px;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 20px;
-} */
-
 h2 {
   color: #007bff;
   padding: 15px;
@@ -311,4 +300,52 @@ h2 {
   margin-bottom: 40px;
   border-bottom: 1px solid #ccc;
   padding-bottom: 20px;
+}
+iframe {
+  width: auto;
+}
+
+/* ####################### Button ##################### */
+
+#mobile-menu-button {
+  display: block;
+  /* position: absolute; */
+  font-size: 1.5rem;
+  padding: 5px;
+  color: #000;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#mobile-menu {
+  display: none;
+}
+
+#mobile-menu ul {
+  list-style: none;
+  /* background-color: #fefcfd; */
+
+  padding: 0;
+  margin: 0;
+}
+
+#mobile-menu li {
+  padding: 10px;
+}
+
+#mobile-menu a {
+  text-decoration: none;
+  color: #1b1ceb;
+}
+
+/* Show the mobile menu when the button is clicked */
+#mobile-menu.open {
+  display: block;
+}
+
+/* Style for menu items on hover */
+#mobile-menu a:hover {
+  background-color: lightskyblue;
+  color: #333;
 }

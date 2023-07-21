@@ -6,6 +6,8 @@
     <link rel="icon" href="images/favicon.ico" />
     <title>Bountiful Food</title>
     <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
   </head>
   <body>
     <header>
@@ -15,7 +17,8 @@
       <picture class="logo">
         <img src="images/Bountiful-logo.png" alt="Webpage Logo" />
       </picture>
-      <nav>
+      <button id="mobile-menu-button">&#9776;</button>
+      <nav id="mobile-menu">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="fresh.html">Fresh</a></li>
@@ -82,10 +85,13 @@
     <footer>
       <div class="social">
         <a href="https://www.facebook.com/" target="_blank">
-          <img src="images/Facebook-icon.png" alt=""
+          <img src="images/Facebook-icon.png" alt="Social Facebook Icon"
         /></a>
         <a href="https://www.instagram.com/" target="_blank">
-          <img src="images/instagram_icon.png" alt=""
+          <img src="images/instagram-icon.png" alt="Social Intagram Icon"
+        /></a>
+        <a href="https://www.twitter.com/" target="_blank">
+          <img src="images/Twitter_icon.png" alt="Social Twitter Icon"
         /></a>
       </div>
 
@@ -106,5 +112,6 @@
     <script src="scripts/weathercard.js"></script>
     <script src="scripts/total-drinks.js"></script>
     <script src="scripts/lazy-load.js"></script>
+    <script src="scripts/button.js"></script>
   </body>
 </html>
