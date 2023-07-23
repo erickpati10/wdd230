@@ -7,7 +7,7 @@
   display: block;
   position: absolute;
   top: 10px;
-  left: 10px;
+  left: -10px;
   font-size: 1.5rem;
   padding: 2rem;
   color: #fefcfd;
@@ -56,8 +56,13 @@
 
 .social {
   position: relative;
-  top: -178px;
-  right: -142px;
+  top: -205px;
+  right: -140px;
+}
+
+.social img {
+  width: 25px;
+  height: 25px;
 }
 .hero-pic img {
   width: 100%;
