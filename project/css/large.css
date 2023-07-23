@@ -113,12 +113,4 @@
     display: none;
     cursor: pointer;
   }
-
-  .nav-link {
-    transition: 0.7s ease;
-  }
-
-  .nav-link:hover {
-    color: dodgerblue;
-  }
 }

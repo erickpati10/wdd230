@@ -352,3 +352,12 @@ a {
 .nav-menu.active {
   left: 0;
 }
+
+.nav-link {
+  transition: 0.7s ease;
+}
+
+.nav-link:hover {
+  color: dodgerblue;
+  font-size: 30px;
+}
