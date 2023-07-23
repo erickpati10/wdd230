@@ -320,6 +320,13 @@ button {
   background-color: #67e2f4;
 }
 
+.list a {
+  color: black;
+}
+.cards a {
+  color: white;
+}
+
 /* #############Join############ */
 
 .join-box h1 {
