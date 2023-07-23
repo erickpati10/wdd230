@@ -308,6 +308,9 @@ a {
 
 .navbar {
   margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .bar {
