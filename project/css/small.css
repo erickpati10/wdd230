@@ -327,7 +327,7 @@ a {
   display: block;
 }
 
-.hambuger.active .bar:nth-child(2) {
+/* .hambuger.active .bar:nth-child(2) {
   opacity: 0;
 }
 
@@ -337,7 +337,7 @@ a {
 
 .hambuger.active .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
-}
+} */
 .nav-menu {
   position: fixed;
   left: -100%;
