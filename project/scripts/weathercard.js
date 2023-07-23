@@ -47,7 +47,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     forecastItemsContainer.innerHTML = "";
     for (let i = 1; i <= 3; i++) {
-      // Check if forecastData.list[i] and forecastData.list[i].temp exist
       if (forecastData.list[i] && forecastData.list[i].temp) {
         const date = new Date(
           forecastData.list[i].dt * 1000
