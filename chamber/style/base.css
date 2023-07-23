@@ -129,6 +129,8 @@ main {
   padding: 5px;
   font-size: 18px;
   color: white;
+  background-color: #21363c;
+  margin: 40px;
 }
 
 .event {
