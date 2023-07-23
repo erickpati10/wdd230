@@ -32,19 +32,22 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  function displayWeatherData(currentWeather, forecastData) {
+  async function displayWeatherData(currentWeather, forecastData) {
     const currentTempElement = document.getElementById("current-temp");
     const conditionElement = document.getElementById("condition");
     const humidityElement = document.getElementById("humidity");
     const forecastItemsContainer = document.getElementById("forecast-items");
 
     currentTempElement.textContent = currentWeather.main.temp.toFixed(1);
-    conditionElement.textContent = currentWeather.weather[0].description;
+
+    const conditionDescription = currentWeather.weather[0].description;
+    conditionElement.textContent = conditionDescription.toUpperCase();
+
     humidityElement.textContent = currentWeather.main.humidity;
 
     forecastItemsContainer.innerHTML = "";
     for (let i = 1; i <= 3; i++) {
-      // Check if the forecastData.list[i] and forecastData.list[i].temp exist
+      // Check if forecastData.list[i] and forecastData.list[i].temp exist
       if (forecastData.list[i] && forecastData.list[i].temp) {
         const date = new Date(
           forecastData.list[i].dt * 1000

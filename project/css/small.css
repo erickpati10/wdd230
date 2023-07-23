@@ -175,6 +175,10 @@ footer {
   margin-bottom: 10px;
 }
 
+.current-weather .condition {
+  text-transform: uppercase;
+}
+
 .current-weather p,
 .three-day-forecast p {
   margin: 5px 0;
