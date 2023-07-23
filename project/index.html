@@ -57,15 +57,23 @@
         </div>
       </div>
       <div class="weather-card">
-        <h2>Carlsbad Weather</h2>
+        <h2>Weather Forecast</h2>
         <div class="current-weather">
-          <p><strong>Temperature:</strong> <span id="current-temp"></span>°C</p>
-          <p><strong>Condition:</strong> <span id="condition"></span></p>
-          <p><strong>Humidity:</strong> <span id="humidity"></span>%</p>
+          <h3>Current Weather</h3>
+          <p>
+            <strong>Temperature:</strong>
+            <span id="current-temp">Loading...</span> °F
+          </p>
+          <p>
+            <strong>Condition:</strong> <span id="condition">Loading...</span>
+          </p>
+          <p>
+            <strong>Humidity:</strong> <span id="humidity">Loading...</span>%
+          </p>
         </div>
-        <div class="forecast">
-          <h3>3-Day Forecast:</h3>
-          <div class="forecast-items" id="forecast-items"></div>
+        <div class="three-day-forecast">
+          <h3>Three Day Forecast</h3>
+          <div id="forecast-items"></div>
         </div>
       </div>
       <div class="summary">
