@@ -86,7 +86,7 @@
     grid-column: 2/3;
   }
   .hero h1 {
-    padding: 25px;
+    /* padding: 25px; */
     font-size: 27px;
   }
   .hero button {
