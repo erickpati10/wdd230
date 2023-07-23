@@ -1,9 +1,14 @@
 @media screen and (min-width: 35em) {
   .name h1 {
-    padding: 21px;
+    padding: 25px;
     color: rgb(42, 42, 82);
-    font-size: 15px;
+    font-size: 20px;
   }
+
+  .logo img {
+    width: 100px;
+  }
+
   .button a {
     position: absolute;
     top: 40%;
@@ -12,8 +17,4 @@
   }
 
   /* ####################### Button ##################### */
-
-  #mobile-menu-button {
-    font-size: 2.5rem;
-  }
 }

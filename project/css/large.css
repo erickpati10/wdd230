@@ -2,7 +2,6 @@
   header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    text-align: center;
     margin: 25px;
     background-color: #f2f2f2;
   }
@@ -32,7 +31,7 @@
   }
 
   .hero h1 {
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: black;
@@ -41,14 +40,12 @@
   }
 
   .button a {
-    display: inline-block;
-    background-color: #4caf50;
-    color: #fff;
-    text-decoration: none;
     padding: 15px 25px;
-    border-radius: 4px;
     font-size: 18px;
-    transition: background-color 0.3s ease;
+  }
+
+  .summary {
+    margin: 40px auto;
   }
 
   #total-drinks {
@@ -88,27 +85,40 @@
 
   /* ############# Button ############## */
 
-  #mobile-menu {
-    display: flex;
-  }
-
-  #mobile-menu ul {
-    display: flex;
-    gap: 2rem;
-    list-style: none;
-    justify-content: center;
-    padding: 38px;
-  }
-  #mobile-menu ul li a {
-    text-decoration: none;
-    font-size: 25px;
+  a {
     color: rgb(42, 42, 82);
   }
-  #mobile-menu-button {
+
+  .navbar {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    margin: auto;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    position: revert;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    font-size: 25px;
+  }
+
+  .hamburger {
     display: none;
-    font-size: 24px;
-    background: transparent;
-    border: none;
     cursor: pointer;
+  }
+
+  .nav-link {
+    transition: 0.7s ease;
+  }
+
+  .nav-link:hover {
+    color: dodgerblue;
   }
 }
