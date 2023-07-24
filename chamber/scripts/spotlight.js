@@ -1,19 +1,16 @@
-// Function to fetch spotlighted businesses from the backend API
 async function fetchSpotlights() {
   try {
-    // Replace 'your-api-url' with the actual URL of your backend API
     const response = await fetch(
       "https://erickpati10.github.io/wdd230/chamber/json-folder/data.json"
     );
     const data = await response.json();
-    return data.businesses; // Access the 'businesses' array from the API response
+    return data.businesses;
   } catch (error) {
     console.error("Error fetching spotlights:", error);
-    return []; // Return an empty array in case of an error or no data
+    return [];
   }
 }
 
-// Function to randomly pick 'n' elements from an array
 function getRandomElementsFromArray(array, n) {
   const shuffled = array.sort(() => 0.5 - Math.random());
   return shuffled.slice(0, n);
@@ -21,14 +18,14 @@ function getRandomElementsFromArray(array, n) {
 
 async function displaySpotlights() {
   const spotlightsContainer = document.getElementById("spotlight-container");
-  const numSpotlights = 3; // Change this to 3 for displaying three spotlights
+  const numSpotlights = 3;
 
   try {
     const spotlightsData = await fetchSpotlights();
 
     if (!Array.isArray(spotlightsData)) {
       console.error("Spotlights data is not an array:", spotlightsData);
-      return; // Exit the function if the data is not an array
+      return;
     }
 
     const goldBusinesses = spotlightsData.filter(
@@ -38,7 +35,6 @@ async function displaySpotlights() {
       (business) => business.category === "silver"
     );
 
-    // Get 'numSpotlights' random businesses from gold and silver categories
     const randomGoldBusinesses = getRandomElementsFromArray(
       goldBusinesses,
       numSpotlights
@@ -48,16 +44,14 @@ async function displaySpotlights() {
       numSpotlights
     );
 
-    // Merge and shuffle the randomly selected businesses
     const randomSpotlights = getRandomElementsFromArray(
       [...randomGoldBusinesses, ...randomSilverBusinesses],
       numSpotlights
     );
 
-    // Generate and append spotlight elements to the container
     randomSpotlights.forEach((business, index) => {
       const spotlightElement = document.createElement("div");
-      spotlightElement.classList.add(`spotlight-${index + 1}`); // Add a unique class name (spotlight-1, spotlight-2, etc.)
+      spotlightElement.classList.add(`spotlight-${index + 1}`);
       spotlightElement.innerHTML = `
           <h2>${business.name}</h2>
           <picture>
@@ -72,5 +66,4 @@ async function displaySpotlights() {
   }
 }
 
-// Call the function to display spotlights on page load
 displaySpotlights();
