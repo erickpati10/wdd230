@@ -19,10 +19,9 @@ function getRandomElementsFromArray(array, n) {
   return shuffled.slice(0, n);
 }
 
-// Function to display the spotlighted businesses on the Home page
 async function displaySpotlights() {
   const spotlightsContainer = document.getElementById("spotlight-container");
-  const numSpotlights = 2;
+  const numSpotlights = 3; // Change this to 3 for displaying three spotlights
 
   try {
     const spotlightsData = await fetchSpotlights();
@@ -56,12 +55,13 @@ async function displaySpotlights() {
     );
 
     // Generate and append spotlight elements to the container
-    randomSpotlights.forEach((business) => {
+    randomSpotlights.forEach((business, index) => {
       const spotlightElement = document.createElement("div");
+      spotlightElement.classList.add(`spotlight-${index + 1}`); // Add a unique class name (spotlight-1, spotlight-2, etc.)
       spotlightElement.innerHTML = `
           <h2>${business.name}</h2>
           <picture>
-            <img src="${business.logo}" alt="${business.name} logo" />
+            <img src="${business.imgurl}" alt="${business.name} logo" />
           </picture>
           <p><strong>Phone:</strong> ${business.phone}</p>
         `;

@@ -70,10 +70,6 @@
   object-fit: cover;
 }
 
-#spotlight-container img {
-  width: 200px;
-}
-
 ul li {
   display: flex;
   justify-content: center;
@@ -191,19 +187,24 @@ main {
   border: 1px solid gray;
   text-align: center;
 }
+
+#spotlight-container img {
+  width: 200px;
+}
+
 #spotlight-container {
   text-align: center;
   background-color: #7887be;
   border: 1px solid gray;
 }
-.box1,
-.box2 {
+.spotlight-1,
+.spotlight-2 {
   padding: 1rem;
   margin: 10px;
   border: 1px solid white;
   object-fit: cover;
 }
-.box3 {
+.spotlight-3 {
   display: none;
   padding: 2rem;
   margin: 10px;

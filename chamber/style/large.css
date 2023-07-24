@@ -129,9 +129,9 @@
     grid-row: 1/4;
     grid-column: 3/4;
   }
-  .box1,
-  .box2,
-  .box3 {
+  .spotlight-1,
+  .spotlight-2,
+  .spotlight-3 {
     display: grid;
     justify-items: center;
     text-align: center;
