@@ -4,6 +4,7 @@
       "name": "Bucked up",
       "location": "Orem, UT",
       "phone": "855-205-2825",
+      "category": "silver",
       "website": "https://www.buckedup.com/",
       "imgurl": "https://www.buckedup.com/public/default/img/home/header/bk-logo-navbar.webp"
     },
@@ -11,6 +12,7 @@
       "name": "Crumbl Cookies",
       "location": "Lehi, UT",
       "phone": "801-823-1272",
+      "category": "gold",
       "website": "https://crumblcookies.com/",
       "imgurl": "https://crumblcookies.com/_next/static/media/crumblcookies.c568ceae.svg"
     },
@@ -18,6 +20,7 @@
       "name": "G.O.A.T. Haircuts",
       "location": "Lehi, UT",
       "phone": "801-756-4460",
+      "category": "silver",
       "website": "https://goathaircuts.com/",
       "imgurl": "https://img1.wsimg.com/isteam/ip/a07d5d6b-a434-4305-9875-5868b1c5a55e/GOAT%20Logo%20-%20v12%20(White).png/:/rs=w:474,h:180,cg:true,m/cr=w:474,h:180/qt=q:95"
     },
@@ -25,6 +28,7 @@
       "name": "Ivory Homes",
       "location": "Salt Lake City, UT",
       "phone": "801-747-7000",
+      "category": "gold",
       "website": "https://ivoryhomes.com/",
       "imgurl": "https://beta.edificecms.com/builder/elements/images/uploads/project109/16257371358064.png"
     },
@@ -32,6 +36,7 @@
       "name": "Synergy Pest Control",
       "location": "Lehi, UT",
       "phone": "801-889-2972",
+      "category": "silver",
       "website": "https://synergy-pest.com/",
       "imgurl": "https://synergy-pest.com/wp-content/uploads/2023/05/synergy-logo_wide_black_red.png"
     },
@@ -46,6 +51,7 @@
       "name": "Prime Residential Brokers",
       "location": "Riverton, UT",
       "phone": "801-916-3542",
+      "category": "gold",
       "website": "https://www.primeslc.com/",
       "imgurl": "https://static.wixstatic.com/media/7d1c64_6fa7e1f4f8384a0ab9cc707846d6662e.jpg/v1/fill/w_376,h_154,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/7d1c64_6fa7e1f4f8384a0ab9cc707846d6662e.jpg"
     },
@@ -53,6 +59,7 @@
       "name": "Slapfish",
       "location": "Sandy, UT",
       "phone": "801-432-8488",
+      "category": "silver",
       "website": "https://www.slapfishrestaurant.com/",
       "imgurl": "https://www.slapfishrestaurant.com/admin/asset/uploads/186/on_page_element/slapfish-logo-white1.png"
     },
@@ -60,6 +67,7 @@
       "name": "Harbor Freight Tools",
       "location": "Sandy, UT",
       "phone": "801-523-6114",
+      "category": "gold",
       "website": "https://www.harborfreight.com/",
       "imgurl": "https://images.harborfreight.com/media/logos/harborfreight-logo.svg"
     }

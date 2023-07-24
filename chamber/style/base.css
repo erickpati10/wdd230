@@ -70,7 +70,7 @@
   object-fit: cover;
 }
 
-.box img {
+#spotlight-container img {
   width: 200px;
 }
 
@@ -191,7 +191,7 @@ main {
   border: 1px solid gray;
   text-align: center;
 }
-.box {
+#spotlight-container {
   text-align: center;
   background-color: #7887be;
   border: 1px solid gray;
