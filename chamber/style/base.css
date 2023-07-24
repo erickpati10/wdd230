@@ -190,6 +190,7 @@ main {
 
 #spotlight-container img {
   width: 200px;
+  margin: 10px 0;
 }
 
 #spotlight-container {
@@ -209,6 +210,10 @@ main {
   padding: 2rem;
   margin: 10px;
   border: 1px solid white;
+}
+
+.spotlight-container h2 {
+  margin-bottom: 5px;
 }
 .contact,
 .contact h2,
