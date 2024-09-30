@@ -65,7 +65,7 @@
 // ############################
 
 // Replace 'YOUR_API_KEY' with your actual OpenWeatherMap API key
-const apiKey = "5a08b4d15fdba64fcac8e6172b74838d";
+const apiKey = "f7f717aa0ffdbf9353b0f0e20f792557";
 const city = "Carlsbad";
 
 async function getCurrentWeather() {
@@ -89,6 +89,7 @@ async function getThreeDayForecast() {
     const response = await fetch(
       `https://api.openweathermap.org/data/2.5/forecast/daily?q=${city}&units=metric&cnt=4&appid=${apiKey}`
     );
+    console.log("response", response);
     if (!response.ok) {
       throw new Error("Forecast data not available");
     }
@@ -132,10 +133,10 @@ async function fetchWeatherData() {
     if (currentWeather && forecastData) {
       displayWeatherData(currentWeather, forecastData);
     } else {
-      console.log("Error fetching weather data.");
+      console.log("bbError fetching weather data.");
     }
   } catch (error) {
-    console.log("Error fetching weather data:", error);
+    console.log("aaError fetching weather data:", error);
   }
 }
 
